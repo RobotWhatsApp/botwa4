@@ -1536,8 +1536,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         yoii = '*'
        stst = await xeon.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-			quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
        menu = `
 ╭────────────────╮
@@ -1565,7 +1563,6 @@ quotes = quotesnya.result.quotes
 │❖ 𝑰𝒅𝒖𝒉 𝑨𝒅𝒉𝒂 : ${Adha}
 │❖ 𝑼𝒍𝒕𝒂𝒉 𝑮𝒖𝒂 : ${ultah}
 ╰────────────────╯
-𝐐𝐔𝐎𝐓𝐄𝐒 : ${quotes}
 ${readmore}
  
   ❑ ᴏᴡɴᴇʀ ғᴇᴀᴛᴜʀᴇs
@@ -4587,7 +4584,6 @@ case 'setprefix':
     Follower: ${tod.result.user_followers}`;
         xeon.sendMessage(from, buff, image, { quoted: mek, caption: tt });
         break;
-      
       case "tiktokstalk":
         if (!q) return reply("Username? ");
         var i = await fetchJson(
