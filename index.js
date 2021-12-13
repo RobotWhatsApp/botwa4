@@ -2409,7 +2409,7 @@ sendButMessage(from, menu, `ᴀɴᴅɪɢᴀɴᴢ`, [
           },]);
 break
 case 'groupmenu':
-case 'grupmenu'
+case 'grupmenu':
 menu = `𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎︎
 ❑${prefix}group [3 Button]
 
